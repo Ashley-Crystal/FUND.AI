@@ -1,0 +1,46 @@
+.dashboard {
+    padding: 1rem;
+  
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+  
+      input[type="search"] {
+        width: 300px;
+      }
+  
+      .user-profile {
+        display: flex;
+        align-items: center;
+  
+        span {
+          margin-right: 1rem;
+        }
+      }
+    }
+  
+    .widgets {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+  
+      > div {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 1rem;
+        border-radius: 5px;
+      }
+  
+      .financial-goals {
+        progress {
+          width: 100%;
+          height: 20px;
+        }
+      }
+  
+      //.recent-trends {
+        // Add styles for chart
+   //   }
+    }
+  }

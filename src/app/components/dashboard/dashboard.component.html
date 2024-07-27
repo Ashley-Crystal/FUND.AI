@@ -1,0 +1,54 @@
+<div class="dashboard">
+    <header>
+      <input type="search" placeholder="Type to Search">
+      <div class="user-profile">
+        <span>{{ currentUser.firstName }} {{ currentUser.lastName }}</span>
+        <button (click)="logout()">Logout</button>
+      </div>
+    </header>
+    
+    <div class="widgets">
+      <div class="financial-statements">
+        <h3>Financial Statements</h3>
+        <!-- Add content for financial statements -->
+      </div>
+      
+      <div class="quick-actions">
+        <h3>Quick Actions</h3>
+        <button>Learn</button>
+        <button>Forecasting</button>
+        <button>Advisor</button>
+        <button>Summary</button>
+      </div>
+      
+      <div class="financial-goals">
+        <h3>Financial Goals</h3>
+        <p>20%</p>
+        <progress value="20" max="100"></progress>
+        <p>Account Saving lorem ipsum: Rs.30,000</p>
+      </div>
+      
+      <div class="recent-trends">
+        <h3>Recent Trends</h3>
+        <!-- Add chart component here -->
+      </div>
+      
+      <div class="recent-financial-advice">
+        <h3>Recent Financial Advice</h3>
+        <ul>
+          <li>Investment Plan</li>
+          <li>ITR</li>
+          <li>Investment Plan</li>
+        </ul>
+      </div>
+      
+      <div class="key-points">
+        <h3>Key Points</h3>
+        <ol>
+          <li>Highlight key patterns and shifts in data over time, offering a clear view of changes and trends.</li>
+          <li>Provide a comprehensive snapshot of current movements and future directions, helping to anticipate potential developments.</li>
+          <li>Identify emerging opportunities or risks, enabling stakeholders to make informed and strategic decisions based on the latest insights.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
