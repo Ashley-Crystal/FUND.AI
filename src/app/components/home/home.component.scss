@@ -1,23 +1,58 @@
 .container {
-    text-align: center;
-    padding: 2rem;
-  
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-  
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-  
-    button {
-      margin: 0.5rem;
-    }
-  
-    .terms {
-      font-size: 0.8rem;
-      margin-top: 2rem;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #5cd3b4;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0.5rem;
+}
+
+.primary-button {
+  background-color: #5cd3b4;
+  color: #000000;
+  border: none;
+
+  &:hover {
+    background-color: darken(#5cd3b4, 10%);
   }
+}
+
+.secondary-button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #5cd3b4;
+
+  &:hover {
+    background-color: rgba(92, 211, 180, 0.1);
+  }
+}
+
+.terms {
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
